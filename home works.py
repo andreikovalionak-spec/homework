@@ -113,10 +113,10 @@ lecturer.courses_attached += ['Python', 'C++']
 reviewer.courses_attached += ['Python', 'C++']
 
 # Тесты
-print(student.rate_lecture(lecturer, 'Python', 7))   # None (успешно)
-print(student.rate_lecture(lecturer, 'Java', 8))     # Ошибка (лектор не прикреплён к Java)
-print(student.rate_lecture(lecturer, 'C++', 8))    # Ошибка (студент не изучает C++)
-print(student.rate_lecture(reviewer, 'Python', 6))  # Ошибка (reviewer не может получать оценки)
+print(student.rate_lecture(lecturer, 'Python', 7))   
+print(student.rate_lecture(lecturer, 'Java', 8))     
+print(student.rate_lecture(lecturer, 'C++', 8))    
+print(student.rate_lecture(reviewer, 'Python', 6))  
 
 print(lecturer.grades)  # {'Python': [7]}
 
@@ -163,18 +163,18 @@ reviewer2.courses_attached += ['Java', 'Python']
 
 # Вызов всех методов
 print(" ВЫСТАВЛЕНИЕ ОЦЕНОК ")
-print(reviewer1.rate_hw(student1, 'Python', 8))  # None (успешно)
-print(reviewer1.rate_hw(student1, 'Git', 6))     # None (успешно)
-print(reviewer1.rate_hw(student2, 'Python', 7))   # None (успешно)
-print(reviewer2.rate_hw(student2, 'Java', 9))    # None (успешно)
-print(reviewer1.rate_hw(student1, 'Java', 5))    # Ошибка (курса нет в progress)
+print(reviewer1.rate_hw(student1, 'Python', 8))  
+print(reviewer1.rate_hw(student1, 'Git', 6))     
+print(reviewer1.rate_hw(student2, 'Python', 7))   
+print(reviewer2.rate_hw(student2, 'Java', 9))    
+print(reviewer1.rate_hw(student1, 'Java', 5))    
 
 print(" ОЦЕНКИ ЗА ЛЕКЦИИ ")
-print(student1.rate_lecture(lecturer1, 'Python', 19))  # None (успешно)
-print(student1.rate_lecture(lecturer1, 'Git', 9))       # None (успешно)
-print(student2.rate_lecture(lecturer2, 'Python', 8))   # None (успешно)
-print(student2.rate_lecture(lecturer2, 'Java', 7))      # None (успешно)
-print(student1.rate_lecture(lecturer2, 'C++', 7))       # Ошибка (лектор не прикреплён)
+print(student1.rate_lecture(lecturer1, 'Python', 19))  
+print(student1.rate_lecture(lecturer1, 'Git', 9))       
+print(student2.rate_lecture(lecturer2, 'Python', 8))  
+print(student2.rate_lecture(lecturer2, 'Java', 7))      
+print(student1.rate_lecture(lecturer2, 'C++', 7))       
 
 print(" ИНФОРМАЦИЯ ОБ ОБЪЕКТАХ ")
 print(" Студент 1 ")
